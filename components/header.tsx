@@ -7,12 +7,8 @@ export default function Header() {
         <header className="flex justify-between items-center h-20">
             <h2 className="text-4xl font-semibold p-4">Currency Rates</h2>
             <nav className="p-2 m-4">
-                <Link href="/public" className={linkStyling}>
-                    Home
-                </Link>
-                <Link href="/about" className={linkStyling}>
-                    About
-                </Link>
+                <Link href="/" className={linkStyling}>Home</Link>
+                <Link href="/about" className={linkStyling}>About</Link>
             </nav>
         </header>
     );

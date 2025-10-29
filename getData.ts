@@ -1,5 +1,3 @@
-"use server";
-
 const API_KEY = process.env.EXCHANGE_API_KEY;
 
 export async function getData(base: string = "USD") {
