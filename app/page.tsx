@@ -7,8 +7,8 @@ export default async function Home() {
     const base = data.base_code;
     const updated = data.time_last_update_utc;
 
-    {/*take all key-value pairs from the conversion_rates object and turn them into an array*/}
-    const rates = Object.entries(data.conversion_rates);
+    const rates = Array.isArray(Object.entries(data.conversion_rates)) ? Object.entries(data.conversion_rates) : [];
+
 
     return (
         <div className="max-w-6xl mx-auto p-8 flex flex-col items-center text-center bg-gradient-to-b from-green-50 to-green-100 rounded-2xl shadow-xl">
