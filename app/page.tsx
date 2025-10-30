@@ -24,7 +24,7 @@ export default async function Home() {
                 </p>
             </div>
 
-            {/* Divider */}
+            {/* Divider decor in home page */}
             <div className="w-3/4 h-px bg-gradient-to-r from-transparent via-green-400 to-transparent mb-4" />
 
 
